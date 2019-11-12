@@ -101,3 +101,5 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 prompt_context() {}
+#if zsh start,tmux start
+[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
