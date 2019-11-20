@@ -5,7 +5,7 @@ ln -sf ~/dotfiles/colors ~/.vim
 ln -sf ~/dotfiles/iceberg ~/.vim
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.config ~/.config
-
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 
 
