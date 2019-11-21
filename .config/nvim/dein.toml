@@ -5,8 +5,12 @@ repo = 'Shougo/dein.vim'
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
+
 [[plugins]]
-repo = 'glacambre/firenvim'
-hook_add = '''
-  call firenvim#install(0)
-'''
+repo = 'jiangmiao/auto-pairs'
+
+#[[plugins]]
+#repo = 'glacambre/firenvim'
+#hook_add = '''
+#  call firenvim#install(0)
+#'''
