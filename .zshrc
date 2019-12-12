@@ -103,3 +103,6 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 prompt_context() {}
 #if zsh start,tmux start
 [[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+
+export JAVA_HOME=$(/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8")
+PATH=${JAVA_HOME}/bin:${PATH}
