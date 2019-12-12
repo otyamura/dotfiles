@@ -6,6 +6,7 @@ syntax on "コードの色分け
 set tabstop=4 "インデントをスペース4つ分に設定
 set smartindent "オートインデント
 set shiftwidth=4 "自動的にできるインデントを変更
+set expandtab
 
 "#####検索設定#####
 set ignorecase "大文字/小文字の区別なく検索する
