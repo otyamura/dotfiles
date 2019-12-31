@@ -45,3 +45,7 @@ if &compatible
 if dein#check_install()
   call dein#install()
 endif
+
+let g:python_host_prog = expand('/usr/local/bin/python')
+let g:python3_host_prog = expand('~/.pyenv/versions/neovim-3/bin/python')
+
