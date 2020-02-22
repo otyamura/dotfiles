@@ -18,7 +18,7 @@ set clipboard=unnamed
 "検索時のハイライトを消す
 set nohlsearch
 
-autocmd BufNewFile *.cpp 0r $HOME/.vim/template/cpp.txt "cppを開いたときに自動的に読み込む
+autocmd BufNewFile *.cpp 0r $HOME/.config/nvim/template/cpp.txt "cppを開いたときに自動的に読み込む
 set backspace=indent,eol,start
 
 colorscheme iceberg
