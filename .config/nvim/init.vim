@@ -15,6 +15,8 @@ set wrapscan "検索時に最後まで行ったら最初に戻る
 
 set termguicolors
 set clipboard=unnamed
+"検索時のハイライトを消す
+set nohlsearch
 
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/cpp.txt "cppを開いたときに自動的に読み込む
 set backspace=indent,eol,start
