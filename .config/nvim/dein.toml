@@ -65,4 +65,3 @@ repo = 'Shougo/neosnippet-snippets'
 [[plugins]]
 repo = 'tbodt/deoplete-tabnine'
 build = './install.sh'
-

@@ -15,8 +15,11 @@ set wrapscan "検索時に最後まで行ったら最初に戻る
 
 set termguicolors
 set clipboard=unnamed
-"検索時のハイライトを消す
-set nohlsearch
+"検索時のハイライト
+set hlsearch
+
+"現在あるカーソルをハイライト
+set cursorline
 
 autocmd BufNewFile *.cpp 0r $HOME/.config/nvim/template/cpp.txt "cppを開いたときに自動的に読み込む
 set backspace=indent,eol,start
@@ -29,6 +32,13 @@ nnoremap <C-l> <C-w>l
 inoremap <silent> jj <Esc>
 
 tnoremap <silent> jj <C-\><C-n>
+
+"ファイルを閉じても変更履歴が残るように設定
+if has('persistent_undo')
+	let undo_path = expand('~/.config/nvim/undo')
+	exe 'set undodir=' .. undo_path
+	set undofile
+endif
 
 if &compatible
    set nocompatible
@@ -50,4 +60,3 @@ endif
 
 let g:python_host_prog = expand('/usr/local/bin/python')
 let g:python3_host_prog = expand('~/.pyenv/versions/neovim-3/bin/python')
-
