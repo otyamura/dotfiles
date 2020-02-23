@@ -18,6 +18,9 @@ set clipboard=unnamed
 "検索時のハイライト
 set hlsearch
 
+"現在開いてるファイルのパスを表示
+set statusline+=%F
+
 "現在あるカーソルをハイライト
 set cursorline
 
