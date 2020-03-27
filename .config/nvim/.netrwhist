@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
-let g:netrw_dirhist_5='/Users/otyamura/Documents/csprog/12/ex12'
-let g:netrw_dirhist_4='/Users/otyamura/.cache/dein/repos/github.com/glacambre/firenvim__'
-let g:netrw_dirhist_3='/Users/otyamura/test'
-let g:netrw_dirhist_2='/Users/otyamura/Documents/csprog/02'
-let g:netrw_dirhist_1='/Users/otyamura/Documents/csprog/01'

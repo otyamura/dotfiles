@@ -1,0 +1,41 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo             = 'autozimu/LanguageClient-neovim'
+rev              = 'next'
+# プラグインのアップデート時に呼び出されるコールバック
+hook_post_update = 'call hook#post_update#language_client_neovim#load()'
+# プラグインが読み込まれる際に呼び出されるコールバック
+hook_add         = 'call hook#add#language_client_neovim#load()'
+
+
+[[plugins]]
+repo             = 'Chiel92/vim-autoformat'
+# プラグイン読み込み時のコールバック
+hook_add         = 'call hook#add#vim_autoformat#load()'
+# プラグインアップデート時のコールバック
+hook_post_update = 'call hook#post_update#vim_autoformat#load()'
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+
+[[plugins]]
+repo = 'suan/vim-instant-markdown'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+#[[plugins]]
+#repo = 'glacambre/firenvim'
+#hook_post_update = '''
+#  call firenvim#install(0)
+#'''
+
