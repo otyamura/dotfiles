@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/otyamura/dotfiles/.git'
 let g:netrw_dirhist_6='/Users/otyamura/Documents/csprog/stick_down'
 let g:netrw_dirhist_5='/Users/otyamura/Documents/csprog/12/ex12'
 let g:netrw_dirhist_4='/Users/otyamura/.cache/dein/repos/github.com/glacambre/firenvim__'
