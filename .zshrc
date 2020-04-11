@@ -97,6 +97,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ls='lsd'
+
+
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
