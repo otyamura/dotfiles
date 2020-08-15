@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/Users/otyamura/Library/Mobile Documents/com~apple~CloudDocs/授業メモ/2年/情報倫理と法/5回目'
+let g:netrw_dirhist_9='/Users/otyamura/Library/Mobile Documents/com~apple~CloudDocs/授業メモ/2年/情報倫理と法'
+let g:netrw_dirhist_8='/Users/otyamura/Library/Mobile Documents/com~apple~CloudDocs/授業メモ/2年/情報倫理と法/5回目'
 let g:netrw_dirhist_7='/Users/otyamura/dotfiles/.git'
 let g:netrw_dirhist_6='/Users/otyamura/Documents/csprog/stick_down'
 let g:netrw_dirhist_5='/Users/otyamura/Documents/csprog/12/ex12'
