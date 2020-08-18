@@ -27,7 +27,8 @@ set cursorline
 autocmd BufNewFile *.cpp 0r $HOME/.config/nvim/template/cpp.txt "cppを開いたときに自動的に読み込む
 set backspace=indent,eol,start
 
-colorscheme iceberg
+"colorscheme iceberg
+colorscheme kuroi
 noremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
