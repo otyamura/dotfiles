@@ -105,8 +105,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
 prompt_context() {}
 #if zsh start,tmux start
-[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
-
+[[ -z "$TMUX" && ! -z "$PS1" && $TERM_PROGRAM != "vscode" ]] && tmux
 #export JAVA_HOME=$(/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8")
 #PATH=${JAVA_HOME}/bin:${PATH}
 #export PATH='/usr/local/opt/llvm/bin/:/usr/local/opt/llvm/bin:/usr/local/opt/llvm/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin:/Users/otyamura/.nodebrew/current/bin:/usr/local/bin:/Users/otyamura/.pyenv/shims:/Users/otyamura/.pyenv/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/otyamura/.nodebrew/current/bin:/Users/otyamura/.pyenv/shims:/Users/otyamura/.pyenv/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
