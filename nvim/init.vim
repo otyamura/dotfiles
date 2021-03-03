@@ -24,6 +24,12 @@ set statusline+=%F
 "現在あるカーソルをハイライト
 set cursorline
 
+"折り畳みしない
+set foldmethod=syntax
+let perl_fold=1
+set foldlevel=100
+
+
 autocmd BufNewFile *.cpp 0r $HOME/.config/nvim/template/cpp.txt "cppを開いたときに自動的に読み込む
 set backspace=indent,eol,start
 

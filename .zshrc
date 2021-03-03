@@ -99,18 +99,43 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='lsd'
 alias icloud='/Users/otyamura/Library/Mobile\ Documents/com\~apple\~CloudDocs'
+alias class='/Users/otyamura/Library/Mobile\ Documents/com\~apple\~CloudDocs/授業メモ/2年/後期'
 
 export PATH=/usr/local/bin:$PATH
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-#export PATH=$HOME/.nodebrew/current/bin:$PATH
 prompt_context() {}
+
 #if zsh start,tmux start
 [[ -z "$TMUX" && ! -z "$PS1" && $TERM_PROGRAM != "vscode" ]] && tmux
-#export JAVA_HOME=$(/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8")
-#PATH=${JAVA_HOME}/bin:${PATH}
-#export PATH='/usr/local/opt/llvm/bin/:/usr/local/opt/llvm/bin:/usr/local/opt/llvm/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin:/Users/otyamura/.nodebrew/current/bin:/usr/local/bin:/Users/otyamura/.pyenv/shims:/Users/otyamura/.pyenv/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/otyamura/.nodebrew/current/bin:/Users/otyamura/.pyenv/shims:/Users/otyamura/.pyenv/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
+export JAVA_HOME=$(/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8")
+PATH=${JAVA_HOME}/bin:${PATH}
 
-#export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-# xx はインストールしたJDKのバージョン（例:13）
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
+export PATH="/usr/local/opt/binutils/bin:$PATH"
+export PGDATA=/usr/local/var/postgres
+export PATH="$PATH:/usr/local/Cellar/dex2jar/2.0"
+export PATH="$HOME/.cargo/bin:$PATH"
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/otyamura/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# pyenvさんに~/.pyenvではなく、/usr/loca/var/pyenvを使うようにお願いする
+export PYENV_ROOT=/usr/local/var/pyenv
+
+# pyenvさんに自動補完機能を提供してもらう
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+bindkey -v
+
+bindkey -r '^J'
+
+bindkey "^J" vi-cmd-mode
+function zle-line-init zle-keymap-select {
+    VIM_NORMAL="%K{208}%F{black}⮀%k%f%K{208}%F{white} % NORMAL %k%f%K{black}%F{208}⮀%k%f"
+    VIM_INSERT="%K{075}%F{black}⮀%k%f%K{075}%F{white} % INSERT %k%f%K{black}%F{075}⮀%k%f"
+    RPS1="${${KEYMAP/vicmd/$VIM_NORMAL}/(main|viins)/$VIM_INSERT}"
+    RPS2=$RPS1
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select

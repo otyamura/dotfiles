@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =0
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/otyamura/git/seiseki-nortification-bot/.git'
+let g:netrw_dirhist_1='/usr/local/var/postgres'
 let g:netrw_dirhist_0='/Users/otyamura/Library/Mobile Documents/com~apple~CloudDocs/授業メモ/2年/情報倫理と法/5回目'
 let g:netrw_dirhist_9='/Users/otyamura/Library/Mobile Documents/com~apple~CloudDocs/授業メモ/2年/情報倫理と法'
 let g:netrw_dirhist_8='/Users/otyamura/Library/Mobile Documents/com~apple~CloudDocs/授業メモ/2年/情報倫理と法/5回目'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_6='/Users/otyamura/Documents/csprog/stick_down'
 let g:netrw_dirhist_5='/Users/otyamura/Documents/csprog/12/ex12'
 let g:netrw_dirhist_4='/Users/otyamura/.cache/dein/repos/github.com/glacambre/firenvim__'
 let g:netrw_dirhist_3='/Users/otyamura/test'
-let g:netrw_dirhist_2='/Users/otyamura/Documents/csprog/02'
-let g:netrw_dirhist_1='/Users/otyamura/Documents/csprog/01'
