@@ -107,8 +107,6 @@ prompt_context() {}
 
 #if zsh start,tmux start
 [[ -z "$TMUX" && ! -z "$PS1" && $TERM_PROGRAM != "vscode" ]] && tmux
-export JAVA_HOME=$(/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8")
-PATH=${JAVA_HOME}/bin:${PATH}
 
 export PATH="/usr/local/opt/binutils/bin:$PATH"
 export PGDATA=/usr/local/var/postgres
@@ -139,3 +137,5 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+export ANDROID_SDK=/Users/otyamura/Library/Android/sdk
+export PATH=/Users/otyamura/Library/Android/sdk/platform:$PATH
