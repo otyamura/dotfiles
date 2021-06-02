@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='lsd'
 alias icloud='/Users/otyamura/Library/Mobile\ Documents/com\~apple\~CloudDocs'
-alias class='/Users/otyamura/Library/Mobile\ Documents/com\~apple\~CloudDocs/授業メモ/2年/後期'
+alias class='/Users/otyamura/Library/Mobile\ Documents/com\~apple\~CloudDocs/授業メモ/3年/前期'
 
 export PATH=/usr/local/bin:$PATH
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
@@ -138,4 +138,4 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 export ANDROID_SDK=/Users/otyamura/Library/Android/sdk
-export PATH=/Users/otyamura/Library/Android/sdk/platform:$PATH
+export PATH=/Users/otyamura/Library/Android/sdk/platform-tools:$PATH
