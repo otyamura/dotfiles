@@ -114,14 +114,15 @@ export PATH="$PATH:/usr/local/Cellar/dex2jar/2.0"
 export PATH="$HOME/.cargo/bin:$PATH"
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/otyamura/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH="$PATH:/Applications/SWI-Prolog.app/Contents/MacOS"
 
 # pyenvさんに~/.pyenvではなく、/usr/loca/var/pyenvを使うようにお願いする
-export PYENV_ROOT=/usr/local/var/pyenv
+# export PYENV_ROOT=/usr/local/var/pyenv
 
 # pyenvさんに自動補完機能を提供してもらう
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init -)"
+# fi
 
 bindkey -v
 
@@ -137,5 +138,6 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
-export ANDROID_SDK=/Users/otyamura/Library/Android/sdk
-export PATH=/Users/otyamura/Library/Android/sdk/platform-tools:$PATH
+# export ANDROID_SDK=/Users/otyamura/Library/Android/sdk
+# export PATH=/Users/otyamura/Library/Android/sdk/platform-tools:$PATH
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
