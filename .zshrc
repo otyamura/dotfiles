@@ -68,7 +68,10 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,7 +102,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='lsd'
 alias icloud='/Users/otyamura/Library/Mobile\ Documents/com\~apple\~CloudDocs'
-alias class='/Users/otyamura/Library/Mobile\ Documents/com\~apple\~CloudDocs/授業メモ/3年/前期'
+alias class='/Users/otyamura/Library/Mobile\ Documents/com\~apple\~CloudDocs/授業メモ/3年/後期'
+
 
 export PATH=/usr/local/bin:$PATH
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
@@ -117,12 +121,12 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/otyamura/Library/Caches/heroku/autocomplete/zsh_
 export PATH="$PATH:/Applications/SWI-Prolog.app/Contents/MacOS"
 
 # pyenvさんに~/.pyenvではなく、/usr/loca/var/pyenvを使うようにお願いする
-# export PYENV_ROOT=/usr/local/var/pyenv
-
-# pyenvさんに自動補完機能を提供してもらう
-# if command -v pyenv 1>/dev/null 2>&1; then
-#   eval "$(pyenv init -)"
-# fi
+#export PYENV_ROOT=/usr/local/var/pyenv
+#export PATH="$PYENV_ROOT/bin:$PATH"
+## pyenvさんに自動補完機能を提供してもらう
+#if command -v pyenv 1>/dev/null 2>&1; then
+#  eval "$(pyenv init -)"
+#fi
 
 bindkey -v
 
