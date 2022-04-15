@@ -17,6 +17,6 @@ set clipboard+=unnamed
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/cpp.txt "cppを開いたときに自動的に読み込む
 set backspace=indent,eol,start
 
-colorschem iceberg
+colorschem kuroi
 inoremap <silent> jj <ESC>
 tnoremap <ESC> <C-\><C-n>

@@ -40,6 +40,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 inoremap <silent> <C-j> <Esc>
+inoremap <silent> jj <Esc>
 
 tnoremap <silent> jj <C-\><C-n>
 
@@ -50,23 +51,3 @@ if has('persistent_undo')
 	set undofile
 endif
 
-if &compatible
-   set nocompatible
- endif
- set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
- if dein#load_state('~/.cache/dein')
-   call dein#begin('~/.cache/dein')
-   call dein#load_toml('~/.config/nvim/dein.toml', {'lazy': 0})
-   call dein#load_toml('~/.config/nvim/dein_lazy.toml', {'lazy': 1})
-   call dein#end()
-   call dein#save_state()
- endif
- filetype plugin indent on
- syntax enable
-
-if dein#check_install()
-  call dein#install()
-endif
-
-let g:python_host_prog = expand('/usr/local/bin/python')
-let g:python3_host_prog = expand('~/.pyenv/versions/neovim-3/bin/python')
