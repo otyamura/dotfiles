@@ -25,6 +25,10 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 alias ls='lsd'
+alias dcb='docker compose build'
+alias dcu='docker compose up'
+alias dcud='docker compose up -d'
+alias dcd='docker compose down'
 alias icloud="$HOME/Library/Mobile\ Documents/com\~apple\~CloudDocs"
 alias class="$HOME/Library/Mobile\ Documents/com\~apple\~CloudDocs/授業メモ/3年/後期"
 
