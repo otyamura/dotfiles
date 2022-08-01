@@ -7,3 +7,4 @@ ln -sf ~/dotfiles/nvim ~/.config/nvim
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/.editorconfig ~/.editorconfig
 ln -sf ~/dotfiles/git ~/.config
+ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
