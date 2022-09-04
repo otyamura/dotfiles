@@ -17,6 +17,7 @@ plugins=(
 )
 
 bindkey '^O' autosuggest-accept
+bindkey '^ ' autosuggest-execute
 bindkey -r '\t'
 bindkey '\t' complete-word
 source $ZSH/oh-my-zsh.sh
@@ -36,7 +37,7 @@ alias dcud='docker compose up -d'
 alias dcd='docker compose down'
 alias icloud="$HOME/Library/Mobile\ Documents/com\~apple\~CloudDocs"
 alias class="$HOME/Library/Mobile\ Documents/com\~apple\~CloudDocs/授業メモ/3年/後期"
-
+alias export-dotenv="set -a && source .env && set +a"
 
 export PATH=/usr/local/bin:$PATH
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
