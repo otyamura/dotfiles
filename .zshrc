@@ -58,5 +58,20 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 # rbenv
-eval "$(rbenv init -)"
-export PATH=~/.rbenv/shims:$PATH
+# eval "$(rbenv init -)"
+# export PATH=~/.rbenv/shims:$PATH
+# asdf
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+export PATH="/opt/homebrew/opt/php@8.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.0/sbin:$PATH"
+export PATH=$PATH:"$HOME/Library/Python/3.9/bin"
+
+# bun completions
+[ -s "/Users/otyamura/.bun/_bun" ] && source "/Users/otyamura/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
