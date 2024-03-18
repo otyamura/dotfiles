@@ -12,3 +12,4 @@ ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/.editorconfig ~/.editorconfig
 ln -sf ~/dotfiles/git ~/.config
 ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
+ln -sf ~/dotfiles/.p10k.zsh ~/.p10k.zsh
