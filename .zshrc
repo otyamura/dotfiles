@@ -29,8 +29,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+command_exists() {
+  command -v $1 >/dev/null 2>&1
+}
 
-alias ls='lsd'
+if command_exists lsd; then
+  alias ls='lsd'
+fi
+
 alias dcb='docker compose build'
 alias dcu='docker compose up'
 alias dcud='docker compose up -d'
