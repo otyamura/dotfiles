@@ -1,0 +1,9 @@
+[alias]
+	s = status
+	co = checkout
+	br = branch
+	cm = commit
+	mg = merge
+	logo = log --oneline
+	pd = pull upstream develop
+	cd = checkout develop
